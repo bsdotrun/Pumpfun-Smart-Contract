@@ -10,11 +10,6 @@ Pump.fun is designed for the Solana blockchain, enabling fun and innovative DeFi
 Whether you want to create, manage, or interact with liquidity pools, this GitHub repo is your go-to resource for Solana pump projects.
 
 
-## 📞 Support
-
-- **Telegram**: [@Tr1030109](https://t.me/Tr1030109)
-- **Discord**: 0xapp123
-- **GitHub Issues**: [Create an issue](https://github.com/Tronzit-Veca/Pumpfun-Smart-Contract/issues)
 
 ## 🚀 Features
 
@@ -31,8 +26,6 @@ Whether you want to create, manage, or interact with liquidity pools, this GitHu
 - [Usage](#usage)
 - [Architecture](#architecture)
 - [API Reference](#api-reference)
-- [Examples](#examples)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## 🛠️ Installation
@@ -134,41 +127,6 @@ The smart contract is built using the Anchor framework and consists of:
 | `remove_virtual_lp` | Remove virtual liquidity from pool | `amount`, `token_mint` |
 | `create_raydium_pool` | Create new Raydium pool | `token_a`, `token_b`, `liquidity` |
 | `update_pool_fees` | Update pool fee configuration | `new_fee_rate` |
-
-## 🔍 Examples
-
-### Transaction Examples
-
-Check out these real transactions on Solana Explorer:
-
-- **Remove Virtual LP**: [Transaction Link](https://explorer.solana.com/tx/4L6MWmtV1ZsT8NFfbtu68ZYyYVbpvZ4iynJhPdZw8jESi28TxwojjTFs88Q5QRdNUb297aWfkKcoYP9Ya8npx8AV?cluster=devnet)
-- **Create Raydium Pool**: [Transaction Link](https://explorer.solana.com/tx/4L6MWmtV1ZsT8NFfbtu68ZYyYVbpvZ4iynJhPdZw8jESi28TxwojjTFs88Q5QRdNUb297aWfkKcoYP9Ya8npx8AV?cluster=devnet)
-
-### Fee Structure
-
-The contract implements a 5% LP creation fee calculated from reserves:
-
-```rust
-pub const LP_CREATION_FEE_RATE: u64 = 500; // 5% (500 basis points)
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### Development Setup
-
-```bash
-# Run tests
-anchor test
-
-# Lint code
-npm run lint
-
-# Format code
-npm run lint:fix
-```
-
 
 ## 📄 License
 
